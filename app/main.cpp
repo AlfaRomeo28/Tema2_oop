@@ -26,8 +26,8 @@ int main() {
         EfectDistorsie overdrive("Tube Screamer", true, 0.8f, 2.0f);
         FiltruTreceJos filtruBas("Cab Simulator", true, 4500.0f, 0.6f);
         EfectReverb reverbSala("Hall Reverb", true, 0.75f, 2.5f);
-        EfectReverb reverbSala("Hall Reverb", true, 0.75f, 2.5f);
-        EfectReverb reverbSala("Hall Reverb", true, 0.75f, 2.5f);
+     
+       
 
         //  polimorfics in container (se fac copii profunde prin clone())
         rackPrincipal.adaugaEfect(ecouChitara);
