@@ -1,9 +1,12 @@
-#include <gtest/gtest.h>
 #include "EfectEcou.h"
-#include "EfectAudio.h"
+#include <cassert>
+#include <iostream>
 
-TEST(AudioTest, CreareEfect) {
+int main() {
     EfectEcou ecou("EcouTest", true, 5, 0.4f);
-    EXPECT_EQ(ecou.getNume(), "EcouTest");
-    EXPECT_TRUE(ecou.esteActiv());
+    assert(ecou.getNume() == "EcouTest");
+    assert(ecou.esteActiv() == true);
+
+    std::cout << "Testele unitare au trecut cu succes!\n";
+    return 0;
 }
