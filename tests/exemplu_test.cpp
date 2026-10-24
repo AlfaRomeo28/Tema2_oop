@@ -29,6 +29,6 @@ int main() {
     assert(reverb.getMarimeCamera() > 0.69f && reverb.getMarimeCamera() < 0.71f);
     assert(reverb.getTimpDecadere() > 1.49f && reverb.getTimpDecadere() < 1.51f);
 
-    std::cout << "Toate testele unitare si getterele au fost verificate cu succes!\n"<<std::flush;
-    return 0;
+ std::cout << "Toate testele au fost executate. \n" << std::flush;
+ return 0;
 }
