@@ -75,6 +75,7 @@ target_sources(${MAIN_LIBRARY_NAME}
         src/FiltruTreceJos.cpp
         src/RackEfecte.cpp
         src/ExceptiiAudio.cpp
+        src/EfectReverb.cpp
 )
 
 # NOTE: Add all defined targets (e.g. executables, libraries, etc. )

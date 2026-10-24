@@ -4,6 +4,7 @@
 #include "../include/FiltruTreceJos.h"
 #include "../include/RackEfecte.h"
 #include "../include/ExceptiiAudio.h"
+#include "../include/EfectReverb.h"
 
 //  afisarea continutului unui semnal audio
 void printeazaSemnal(const char* eticheta, const float* buffer, std::size_t dimensiune) {
@@ -24,11 +25,15 @@ int main() {
         EfectEcou ecouChitara("Tape Delay", true, 2, 0.4f);
         EfectDistorsie overdrive("Tube Screamer", true, 0.8f, 2.0f);
         FiltruTreceJos filtruBas("Cab Simulator", true, 4500.0f, 0.6f);
+        EfectReverb reverbSala("Hall Reverb", true, 0.75f, 2.5f);
+        EfectReverb reverbSala("Hall Reverb", true, 0.75f, 2.5f);
+        EfectReverb reverbSala("Hall Reverb", true, 0.75f, 2.5f);
 
         //  polimorfics in container (se fac copii profunde prin clone())
         rackPrincipal.adaugaEfect(ecouChitara);
         rackPrincipal.adaugaEfect(overdrive);
         rackPrincipal.adaugaEfect(filtruBas);
+        rackPrincipal.adaugaEfect(reverbSala);
 
         // Afisare rack (apeleaza interfața non-virtuala afiseaza descrierea)
         rackPrincipal.afiseazaRack(std::cout);
